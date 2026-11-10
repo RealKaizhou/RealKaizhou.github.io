@@ -1,177 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kai Zhou — undergraduate at Southwest University. Research in projector compensation and spatial augmented reality.">
+  <meta name="author" content="Kai Zhou">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kai Zhou | 周凯</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/template.css">
+  <link rel="stylesheet" href="assets/homepage.css">
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
+<body class="bg-surface text-text font-serif antialiased" id="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="py-4 bg-surface">
+    <div class="max-w-4xl mx-auto px-6">
+      <nav class="flex items-center justify-center" aria-label="Main navigation">
+        <ul class="flex items-center gap-6 text-sm font-sans">
+          <li><a class="text-text font-bold no-underline" href="#home">Home</a></li>
+          <li><a class="text-text-muted no-underline hover:text-text" href="#news">News</a></li>
+          <li><a class="text-text-muted no-underline hover:text-text" href="#project">Project</a></li>
+          <li><a class="text-text-muted no-underline hover:text-text" href="#education">Education</a></li>
+          <li><a class="text-text-muted no-underline hover:text-text" href="#awards">Awards</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
+  </header>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+  <main id="main">
+    <section class="py-12 md:py-16 bg-surface" aria-labelledby="intro-title">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-8">
+          <div class="flex-shrink-0">
+            <img class="w-48 h-48 md:w-56 md:h-56 object-cover portrait" src="assets/portrait.jpg" alt="Kai Zhou outdoors beneath trees against a blue evening sky" width="1080" height="1080" fetchpriority="high">
+          </div>
+          <div class="flex-1">
+            <h1 class="font-display text-3xl md:text-4xl font-semibold text-text" id="intro-title">Hello, I'm Kai Zhou</h1>
+            <p class="chinese-name" lang="zh-CN">周凯</p>
+            <div class="text-text-body mt-4 max-w-prose leading-relaxed prose bio">
+              <p>I am an undergraduate student at <a href="https://www.swu.edu.cn/" target="_blank" rel="noopener noreferrer">Southwest University</a>.</p>
+              <p>My research interests are <strong>projector compensation</strong> and <strong>spatial augmented reality (SAR)</strong>.</p>
             </div>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6 profile-links">
+              <a class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline" href="mailto:a13310885059@email.swu.edu.cn">
+                <svg class="w-4 h-4 mr-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Email
+              </a>
+              <a class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline" href="https://github.com/RealKaizhou" target="_blank" rel="noopener noreferrer">
+                <svg class="w-4 h-4 mr-1.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.64.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
+    <section class="relative py-12 md:py-16" id="news" aria-labelledby="news-title">
+      <div class="absolute inset-0 bg-surface-muted news-background" aria-hidden="true"></div>
+      <div class="relative max-w-4xl mx-auto px-6">
+        <h2 class="font-display text-2xl font-semibold text-text mb-8" id="news-title">News</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <time class="news-date font-sans text-text-muted" datetime="2026">2026</time>
+            <p class="text-text-body">Our preprint <a href="https://arxiv.org/abs/2611.10637">VAComp: View-Aware Full Projector Compensation</a> is available on arXiv.</p>
+          </li>
+          <li class="news-item">
+            <time class="news-date font-sans text-text-muted" datetime="2024">2024</time>
+            <p class="text-text-body">Began research under the supervision of Prof. <a href="https://bingyaohuang.github.io/">Bingyao Huang</a> at Southwest University.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-surface" id="project" aria-labelledby="project-title">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="project-heading">
+          <h2 class="font-display text-2xl font-semibold text-text" id="project-title">Project</h2>
+          <p class="corresponding-note" id="corresponding-note"><sup>†</sup> Corresponding author</p>
+        </div>
+        <article class="publication flex flex-col md:flex-row gap-6 py-6">
+          <div class="w-full md:w-1/5 flex-shrink-0 publication-thumbnail">
+            <a class="publication-image no-underline" href="https://realkaizhou.github.io/VAComp/" aria-label="Open the VAComp project">
+              <img src="assets/vacomp-method-crop.png" alt="VAComp Method crop showing calibration and tracking, view-dependent rendering, and compensation" width="4401" height="2042" loading="lazy">
+            </a>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-serif text-xl font-semibold"><a class="text-text hover:text-text-body no-underline" href="https://realkaizhou.github.io/VAComp/">VAComp: View-Aware Full Projector Compensation</a></h3>
+            <p class="text-sm mt-1.5 authors"><a class="author-name author-self" href="#home" title="Kai Zhou — this website">Kai Zhou</a>, <a class="author-name" href="https://realqingyue.github.io/">Qingyue Deng</a>, <a class="author-name" href="https://bingyaohuang.github.io/">Bingyao Huang</a><sup class="corresponding-marker" aria-label="Corresponding author" aria-describedby="corresponding-note">†</sup></p>
+            <p class="text-text-muted text-sm mt-1">arXiv, 2026</p>
+            <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-sm publication-links">
+              <a class="inline-flex items-center text-text-muted hover:text-text no-underline" href="https://realkaizhou.github.io/VAComp/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5c4 3 10 3 14 0M5 17.5c4-3 10-3 14 0"/></svg>Project</a>
+              <a class="inline-flex items-center text-text-muted hover:text-text no-underline" href="https://arxiv.org/pdf/2611.10637"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Zm0 0v5h5M8 13h8M8 17h6"/></svg>PDF</a>
+              <a class="inline-flex items-center text-text-muted hover:text-text no-underline" href="https://arxiv.org/abs/2611.10637"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m7 4 10 16M17 4 7 20"/></svg>arXiv</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="credentials bg-surface" aria-label="Education and awards">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="credentials-grid">
+          <section id="education" aria-labelledby="education-title">
+            <h2 class="font-display text-2xl font-semibold text-text mb-8" id="education-title">Education</h2>
+            <p class="credential-date font-sans text-text-muted">2023 — present</p>
+            <h3 class="font-serif text-xl font-semibold">Southwest University</h3>
+            <p class="text-text-body credential-detail">Undergraduate</p>
+          </section>
+          <section id="awards" aria-labelledby="awards-title">
+            <h2 class="font-display text-2xl font-semibold text-text mb-8" id="awards-title">Awards</h2>
+            <p class="credential-date font-sans text-text-muted">COMAP · USA</p>
+            <h3 class="font-serif text-xl font-semibold">Mathematical Contest in Modeling</h3>
+            <p class="text-text-body credential-detail">Finalist</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer max-w-4xl mx-auto px-6 text-text-muted font-sans">
+    <p>© 2026 Kai Zhou <span aria-hidden="true">·</span> <a href="mailto:a13310885059@email.swu.edu.cn">a13310885059@email.swu.edu.cn</a></p>
+    <p class="template-credit">Adapted from <a href="https://keunhong.com/">Keunhong Park's template</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a></p>
+  </footer>
 </body>
-
 </html>

@@ -1,0 +1,46 @@
+/* Adaptations to Keunhong Park's CC BY-SA 4.0 personal website template. */
+html { --text-sm: .95rem; --text-sm--line-height: 1.5; font-size: 21px; line-height: 1.75; scroll-behavior: smooth; scroll-padding-top: 2rem; }
+body { min-width: 280px; }
+a:focus-visible { outline: 2px solid #64644e; outline-offset: 5px; border-radius: 2px; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 10; background: white; padding: .5rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.portrait { object-position: center 47%; }
+.chinese-name { margin-top: .35rem; color: #777; font: .95rem/1.5 "Source Sans 3", "Microsoft YaHei", sans-serif; letter-spacing: .12em; }
+.bio p { margin-top: .8em; margin-bottom: .8em; }
+.bio strong { font-weight: 500; }
+.news-background { mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); }
+.news-item { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 1.25rem; align-items: baseline; }
+.news-item + .news-item { margin-top: 1rem; }
+.news-date { font-size: .85rem; font-variant-numeric: tabular-nums; }
+.publication { padding-top: .4rem; }
+.publication-thumbnail { width: 36%; max-width: 20rem; }
+.publication-image { display: block; aspect-ratio: 4401 / 2042; overflow: hidden; border-radius: .35rem; background: white; border: 1px solid #eeede8; }
+.publication-image img { width: 100%; height: auto; object-fit: contain; }
+.publication-links svg { width: 1rem; height: 1rem; margin-right: .25rem; flex-shrink: 0; }
+.project-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: .35rem 1rem; margin-bottom: 2rem; }
+.corresponding-note { color: #666; font: 400 .85rem/1.5 var(--font-sans); margin: 0; }
+.authors, .authors a.author-name { color: #000; font-size: .95rem; font-weight: 400; }
+.authors a.author-name { text-decoration: none; }
+.authors a.author-self { text-decoration: underline; text-decoration-color: #999; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.authors a.author-name:hover { color: #000; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.corresponding-marker { margin-left: .08em; }
+.credentials { padding-bottom: 4rem; }
+.credentials-grid { border-top: 1px solid #eeede8; padding-top: 2.8rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.credential-date { font-size: .85rem; margin-bottom: .5rem; }
+.credential-detail { margin-top: .3rem; }
+.site-footer { padding-top: 1.25rem; padding-bottom: 2rem; font-size: .75rem; line-height: 1.8; }
+.template-credit { font-size: .7rem; margin-top: .3rem; color: #888; }
+@media (max-width: 767px) {
+  .publication-thumbnail { width: 100%; max-width: none; }
+  .credentials-grid { gap: 2rem; }
+  .site-footer { overflow-wrap: anywhere; }
+}
+@media (max-width: 540px) {
+  html { font-size: 19px; }
+  header ul { flex-wrap: wrap; justify-content: center; gap: .65rem 1rem !important; font-size: .95rem !important; }
+  .news-item { grid-template-columns: 2.5rem minmax(0, 1fr); gap: .75rem; }
+  .credentials-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
