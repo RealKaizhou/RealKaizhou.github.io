@@ -31,7 +31,7 @@
 
 
 
-<link href="static/css/index.css?v=playful-hint-v2" rel="stylesheet"/>
+<link href="static/css/index.css?v=citation-gradient-v2" rel="stylesheet"/>
 <style>
     .blue-text {
       color: hsl(204, 84%, 62%) !important;
@@ -103,7 +103,7 @@
 <script defer="" src="static/js/fontawesome.all.min.js"></script>
 <script src="static/js/bulma-carousel.min.js"></script>
 
-<script src="static/js/index.js"></script>
+<script src="static/js/index.js?v=citation-copy-v1"></script>
 </head>
 <body>
 <section class="hero">
@@ -127,12 +127,18 @@
 <div class="publication-links">
 
 <span class="link-block">
-<button class="external-link button is-normal is-rounded is-dark" disabled="" title="To be added" type="button">
-<span class="icon">
-<i class="fas fa-file-pdf"></i>
-</span>
+<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/pdf/2611.10637" target="_blank" rel="noopener noreferrer">
+<span class="icon" aria-hidden="true"><i class="fas fa-file-pdf"></i></span>
 <span>Paper</span>
-</button>
+</a>
+</span>
+
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2611.10637" target="_blank" rel="noopener noreferrer">
+<!-- arXiv glyph: Academicons by James Walsh, SIL OFL 1.1. -->
+<span class="icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" transform="translate(0 448) scale(1 -1)" d="M62 440Q66 440 70.5 437.5Q75 435 77 432L79 430L219 296L320 388Q328 396 338 396Q340 396 341 396Q357 392 365 378Q370 366 358 350H357L270 247L295 222Q308 211 308.0 193.5Q308 176 295 164L272 143L401 -12Q411 -22 407 -36Q403 -50 389 -55Q385 -56 382 -56Q371 -56 363 -48L217 91L122 3Q116 -5 106 -5Q91 -5 85 9Q80 23 92 36L172 134L143 161Q129 176 129.5 195.0Q130 214 145 229L170 252Q59 386 48 402Q37 417 41 427Q47 440 62 440ZM338 389Q330 388 325 382L224 291L265 252L352 354Q361 367 358 375Q352 385 341 389Q339 389 338 389ZM175 247 150 224Q137 211 136.5 195.5Q136 180 148 167L368 -43Q374 -48 382 -49Q384 -49 387 -48Q397 -44 400 -34Q403 -26 395 -17Z"/></svg></span>
+<span>arXiv</span>
+</a>
 </span>
 
 
@@ -481,6 +487,27 @@ Your browser does not support embedded video. <a href="static/videos/vacomp-demo
 
 
 
+
+<section class="section" id="bibtex" aria-labelledby="bibtex-title">
+<div class="container is-max-desktop">
+<div class="bibtex-header">
+<h2 class="title is-3" id="bibtex-title">BibTeX</h2>
+<button class="copy-bibtex-btn" type="button" aria-label="Copy BibTeX to clipboard" title="Copy BibTeX to clipboard">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>
+<span class="copy-text" aria-live="polite">Copy</span>
+</button>
+</div>
+<pre class="citation-code" id="bibtex-code"><code>@misc{Zhou2026VAComp,
+  title={VAComp: View-Aware Full Projector Compensation},
+  author={Kai Zhou and Qingyue Deng and Bingyao Huang},
+  year={2026},
+  eprint={2611.10637},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2611.10637},
+}</code></pre>
+</div>
+</section>
 
 <!-- Template attribution: adapted from https://jijiangli.github.io/DPCS/
      and https://github.com/eliahuhorwitz/Academic-project-page-template,

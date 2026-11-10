@@ -39,3 +39,10 @@ https://github.com/eliahuhorwitz/Academic-project-page-template
 Originally based on Nerfies: https://nerfies.github.io/
 Template license: Creative Commons Attribution-ShareAlike 4.0
 https://creativecommons.org/licenses/by-sa/4.0/
+
+
+arXiv button icon
+-----------------
+The arXiv icon is rendered from the ai-arxiv glyph in Academicons by James Walsh.
+Source: https://github.com/jpswalsh/academicons
+Academicons font license: SIL Open Font License 1.1 (https://openfontlicense.org/).

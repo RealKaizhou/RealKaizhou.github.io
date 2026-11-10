@@ -3,6 +3,76 @@ body {
 }
 
 
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../fonts/roboto-mono.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Citation Inter';
+  src: url('../fonts/inter-latin.ttf') format('truetype');
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bibtex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Citation Inter', sans-serif;
+}
+
+.bibtex-header .title { margin: 0; font-family: inherit; font-weight: 600; }
+
+.copy-bibtex-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 44px;
+  min-width: 112px;
+  padding: .65rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: linear-gradient(110deg, #2563eb 0%, #7c3aed 52%, #b63bd0 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgb(124 58 237 / 20%);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow .2s, filter .2s;
+}
+
+.copy-bibtex-btn:hover { filter: brightness(1.08); box-shadow: 0 5px 20px rgb(124 58 237 / 32%); }
+.copy-bibtex-btn:active { filter: brightness(.95); }
+.copy-bibtex-btn:focus-visible { outline: 2px solid #7c3aed; outline-offset: 3px; }
+.copy-bibtex-btn.copied { box-shadow: 0 0 0 3px rgb(124 58 237 / 12%), 0 4px 16px rgb(124 58 237 / 24%); }
+.copy-bibtex-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+.citation-code {
+  padding: 1.5rem;
+  border: 1px solid #e7e7eb;
+  border-radius: 12px;
+  background: #f6f6f8;
+  color: #363636;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.citation-code code { font: inherit; color: inherit; background: transparent; }
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
