@@ -78,10 +78,17 @@ body {
     color: #000;
 }
 
-.link-block a {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.publication-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-block: 5px;
 }
+
+.publication-links .link-block { display: flex; }
+.publication-links .button { margin: 0; }
 
 .dnerf {
   font-variant: small-caps;
